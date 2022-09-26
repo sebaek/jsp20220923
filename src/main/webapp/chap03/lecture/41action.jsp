@@ -32,6 +32,11 @@
 	  	<input type="text" name="q">
 	  	<input type="submit">
 	  </form>
+	  
+	  <%--
+	  다음
+	  https://search.daum.net/search?q=bts
+	   --%>
 </body>
 </html>
 
