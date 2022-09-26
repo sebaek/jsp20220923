@@ -25,7 +25,19 @@
 	String[] scores = request.getParameterValues("scores");
 	
 	if (scores != null) {
+		Integer sum = 0;
+		for (String score : scores) {
+			sum += Integer.valueOf(score);
+			
+			out.print("<p>");
+			out.print("점수 : " + score);
+			out.print("</p>");
+		}
 		
+		double avg = sum / 3.0;
+	%>
+		<p>평균 : <%= avg %>입니다.</p>
+	<%
 	}
 	%>
 	
