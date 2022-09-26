@@ -17,6 +17,9 @@
 		<input type="radio" name="location" value="other"> 다른 곳
 		
 		<br>
+		결제 수단 선택하기 :
+		
+		<%-- 현금, 카드, 무통장입금 --%>
 		<input type="submit" value="전송">
 	</form>
 	
@@ -25,10 +28,13 @@
 	<%
 	String name = request.getParameter("name");
 	String loc = request.getParameter("location");
+	String pay = request.getParameter("pay");
 	
 	%>
 	<p>
 		<%= name %>의 배송지는 <%= loc %>입니다.
+		<br>
+		<%= pay %>로 결제할 예정입니다.
 	</p>
 	
 	
