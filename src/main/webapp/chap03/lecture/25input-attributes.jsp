@@ -16,8 +16,6 @@
 		readonly : 읽기만가능 <input type="text" name="p4" value="값" readonly> <br>
 		disabled : 전송불가 <input type="text" name="p5" value="미전송" disabled> <br>
 		
-		
-		
 		<input type="submit" value="전송">
 	</form>
 </body>
