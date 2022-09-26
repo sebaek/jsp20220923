@@ -10,7 +10,14 @@
 <h1>폼 요소 작성해보기</h1>
 
 <%-- form, input 요소들을 작성하기 --%>
-
+<%-- action attribute 생략하면 같은 경로 --%>
+<form action="">
+	<input type="text" name="name" />
+	<br />
+	<input type="text" name="address" />
+	<br />
+	<input type="submit" />
+</form>
 
 <hr />
 
