@@ -9,7 +9,15 @@
 <body>
 	<h1>자기소개 쓰기</h1>
 	<%-- form,input,textarea --%>
-	
+	<form action="">
+		이름 : <input type="text" name="name">
+		<br>
+		자기소개 <br>
+		<textarea name="desc" style="width: 500px; height: 200px"></textarea>
+		
+		<br>
+		<input type="submit" value="전송">
+	</form>
 	<hr>
 	<%
 	String name = request.getParameter("name");
