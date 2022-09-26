@@ -33,10 +33,15 @@
 	  	<input type="submit">
 	  </form>
 	  
+	  <h3>다음</h3>
 	  <%--
 	  다음
 	  https://search.daum.net/search?q=bts
 	   --%>
+	  <form action="https://search.daum.net/search">
+	  	<input type="text" name="q">
+	  	<input type="submit" value="전송">
+	  </form>
 </body>
 </html>
 
