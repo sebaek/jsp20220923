@@ -19,6 +19,9 @@
 		<br>
 		결제 수단 선택하기 :
 		
+		<input type="radio" name="pay" value="cash"> 현금
+		<input type="radio" name="pay" value="credit"> 카드
+		<input type="radio" name="pay" value="deposit"> 무통장입금
 		<%-- 현금, 카드, 무통장입금 --%>
 		<input type="submit" value="전송">
 	</form>
