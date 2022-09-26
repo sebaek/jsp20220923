@@ -8,7 +8,13 @@
 </head>
 <body>
 	<h1>post방식 전송</h1>
-	
+	<form action="" method="post">
+		이름 : <input type="text" name="name"> <br>
+		이메일 : <input type="email" name="email"> <br>
+		암호 : <input type="password" name="password"> <br>
+		주소 : <input type="text" name="address"> <br>
+		<input type="submit" value="가입">
+	</form>
 	
 	<hr>
 	<%
