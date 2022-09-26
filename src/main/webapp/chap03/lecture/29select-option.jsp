@@ -8,7 +8,28 @@
 </head>
 <body>
 	<h1>select option 연습</h1>
+	<form action="">
+	통신사 : 
+	<select name="tel">
+		<option value="sk">SK</option>
+		<option value="kt">KT</option>
+		<option value="lg">LG</option>
+	</select>
 	
+	<br>
+	
+	음식들 : 
+	<select name="foods" multiple>
+		<option value="cake">케이크</option>
+		<option value="pizza">피자</option>
+		<option value="burger">버거</option>
+		<option value="bibimbab">비빔밥</option>
+		<option value="icecream">아이스크림</option>
+	</select>
+	
+	<input type="submit" value="전송">
+	
+	</form>
 	<hr>
 	
 	<%
