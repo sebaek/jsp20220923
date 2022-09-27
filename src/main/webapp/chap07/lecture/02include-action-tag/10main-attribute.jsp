@@ -20,6 +20,11 @@ request.setAttribute("map1", map);
 <div>
 	<jsp:include page="10sub-attribute.jsp"></jsp:include>
 </div>
+
+<h3>el 사용</h3>
+<div>
+	<jsp:include page="10sub-el.jsp"></jsp:include>
+</div>
 </body>
 </html>
 
