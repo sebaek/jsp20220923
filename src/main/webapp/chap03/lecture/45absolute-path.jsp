@@ -12,7 +12,7 @@
 	<%--
 	action 속성에 46번 파일경로를 절대경로로 (/로 시작) 작성
 	 --%>
-	<form action="">
+	<form action="<%= request.getContextPath() %>/chap03/book/46path.jsp">
 		<input type="text" name="name"> 
 		<input type="submit" value="전송">
 	</form>
