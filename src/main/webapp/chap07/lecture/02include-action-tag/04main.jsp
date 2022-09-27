@@ -16,6 +16,10 @@
 	04sub.jsp 출력 결과 포함 (jsp:include 액션 태그 사용)
 	address request parameter 전달하기
 	 --%>
+	<jsp:include page="04sub.jsp">
+		<jsp:param name="address" value="korea" />
+		<jsp:param value="홍길동" name="name"/>
+	</jsp:include>
 </body>
 </html>
 
