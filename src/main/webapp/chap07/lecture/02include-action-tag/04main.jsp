@@ -14,6 +14,7 @@
 	
 	<%-- 
 	04sub.jsp 출력 결과 포함 (jsp:include 액션 태그 사용)
+	address request parameter 전달하기
 	 --%>
 </body>
 </html>
