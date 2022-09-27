@@ -18,9 +18,14 @@
 	%>
 	
 	<div>
+		<h3>java 코드 포함</h3>
 		<jsp:include page="11sub.jsp"></jsp:include>
 	</div>
 
+	<div>
+		<h3>el만 사용</h3>
+		<jsp:include page="11sub-el.jsp"></jsp:include>
+	</div>
 
 </body>
 </html>
