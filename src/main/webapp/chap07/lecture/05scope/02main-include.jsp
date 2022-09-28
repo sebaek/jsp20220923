@@ -12,6 +12,10 @@
 	<%
 	pageContext.setAttribute("page1", "page attr1");
 	request.setAttribute("req1", "req attr1");
+	// session, application에 attribute(속성) 추가
+	// sub.jsp에서 꺼내는 코드 작성
+	session.setAttribute("sess1", "sess attr1");
+	application.setAttribute("app1", "app attr1");
 	%>
 	
 	<div>
