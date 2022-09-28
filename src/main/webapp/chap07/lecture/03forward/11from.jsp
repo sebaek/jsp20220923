@@ -12,7 +12,7 @@ Person p3 = new Person();
 
 p1.setName("trump");
 p2.setName("biden");
-p3.setName("cliton");
+p3.setName("clinton");
 
 o1.add(p1);
 o1.add(p2);
