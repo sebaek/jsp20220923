@@ -14,6 +14,7 @@
 		<input type="submit" value="장바구니에 추가">
 	</form>
 	
+	<a href="cart.jsp">장바구니 보기</a>
 </body>
 </html>
 
