@@ -18,8 +18,10 @@
 		session.setAttribute("cart", cart);
 	}
 	
-	cart.computeIfPresent(product, (k, v) -> v + 1);
-	cart.computeIfAbsent(product, (k) -> 1);
+	if (product != null && !product.trim().isEmpty()) {
+		cart.computeIfPresent(product, (k, v) -> v + 1);
+		cart.computeIfAbsent(product, (k) -> 1);
+	}
 	%>
 	
 	<h1>장바구니</h1>
