@@ -10,6 +10,8 @@
 <body>
 	<h1>쿠키 읽기</h1>
 	
+	<a href="01cookie.jsp">쿠키 만들기</a>
+	
 	<%
 	Cookie[] cookies = request.getCookies();
 	String value = "";
