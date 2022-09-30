@@ -8,9 +8,19 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h3>el param 사용</h3>
-	<%-- ?age=99&email=abc@gmail --%>
-	<p>${param.age }</p>
-	<p>${param.email }</p>
+	<form action="09param-to.jsp" method="post">
+		이름 <input type="text" name="name" value="홍길동"> <br>
+		주소 <input type="text" name="address" value="서울"> <br>
+		<input type="submit" value="전송">
+	</form>
 </body>
 </html>
+
+
+
+
+
+
+
+
+

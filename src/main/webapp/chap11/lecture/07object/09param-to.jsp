@@ -8,9 +8,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h3>el param 사용</h3>
-	<%-- ?age=99&email=abc@gmail --%>
-	<p>${param.age }</p>
-	<p>${param.email }</p>
+	<p>name 파라미터 : ${param.name }</p>
+	<p>address 파라미터 : ${param.address }</p>
 </body>
 </html>
