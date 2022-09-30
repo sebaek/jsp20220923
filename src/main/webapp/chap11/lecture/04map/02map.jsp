@@ -18,12 +18,14 @@
 	map.put("x", "jimin");
 	map.put("y", "v");
 	map.put("abc", "rm");
+	map.put("bts name", "jhope");
 	request.setAttribute("map1", map);
 	%>
 
 	<p>${map1.x }</p>
 	<p>${map1.y }</p>
 	<p>${map1.abc}</p>
+	<%-- <p>${map1.bts name }</p> --%>
 </body>
 </html>
 
