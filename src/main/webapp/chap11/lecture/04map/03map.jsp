@@ -17,6 +17,7 @@
 	map.put("!@#", "panther");
 	
 	request.setAttribute("map1", map);
+	pageContext.setAttribute("k", "key1");
 	%>
 	
 	<p>${map1.key1 }</p> <%-- marvel --%>
@@ -26,6 +27,9 @@
 	<%-- <p>${map1.1key }</p> --%>
 	<p>${map1["1key"] }</p> <%-- thor --%>
 	<p>${map1["!@#"] }</p> <%-- panther --%>
+	
+	<p>안나옴 : ${map1[key1] }</p>
+	<p>k속성 있어서 나옴 : ${map1[k] }</p> <%-- marvel --%>
 	
 </body>
 </html>
