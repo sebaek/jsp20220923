@@ -44,13 +44,13 @@ p4.setAge(600);
 
 %>
 <p>${people.people1[0].name }</p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
+<p>${people.people1[0].age }</p>
+<p>${people.people1[1].name }</p>
+<p>${people.people1[1].age }</p>
+<p>${people.people2[0].name }</p>
+<p>${people.people2[0].age }</p>
+<p>${people.people2[1].name }</p>
+<p>${people.people2[1].age }</p>
 </body>
 </html>
 
