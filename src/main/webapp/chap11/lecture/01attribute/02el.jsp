@@ -11,8 +11,20 @@
 	<%--
 	여기에 attribute를 추가하는 코드를 작성
 	 --%>
+	<%
+	request.setAttribute("myattr2", "java");
+	%>
 
 	<p>${myattr2 }</p> <%-- java 라고 출력되도록 --%>
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
