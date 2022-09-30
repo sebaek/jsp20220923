@@ -13,8 +13,8 @@
 	pageContext.setAttribute("hero list", List.of("iron", "cap"));
 	%>
 	
-	<p></p> <%-- iron --%>
-	<p></p> <%-- cap --%>
+	<p>${pageScope["hero list"][0] }</p> <%-- iron --%>
+	<p>${pageScope["hero list"][1] }</p> <%-- cap --%>
 	
 	
 </body>
