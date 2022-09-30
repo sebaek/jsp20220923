@@ -41,6 +41,12 @@ map.put("car2", c2);
 <p>${cars["car2"].model }</p>
 <p>${cars["car2"].price }</p>
 <p>${cars["car2"].company }</p>
+
+<hr>
+
+<p>${cars["car1"]["model"] }</p>
+<p>${cars["car1"]["price"] }</p>
+<p>${cars["car1"]["company"] }</p>
 </body>
 </html>
 
