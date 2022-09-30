@@ -19,6 +19,8 @@
 	<p><%= request.getContextPath() %></p>
 	<p>${pageContext.request.contextPath }</p>
 	
+	<hr>
+	<%-- el을 사용해서 request의 getLocalPort(), getLocalName() 호출 결과 출력 --%>
 </body>
 </html>
 
