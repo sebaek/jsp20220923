@@ -20,6 +20,12 @@
 	<p>${c.price }</p>
 	<p>${c.company }</p>
 	
+	<hr>
+	<p>${c["model"] }</p>
+	<p>${c["price"] }</p>
+	<p>${c["company"] }</p>
+	
+	
 </body>
 </html>
 
