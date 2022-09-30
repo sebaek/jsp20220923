@@ -11,10 +11,16 @@
 	<%--
 	attribute에 추가 하는 코드 작성
 	 --%>
-	
+	<%
+	request.setAttribute("song", new String[] {"butter", "dynamite", "love"});
+	%>
 	<hr>
 	<p>${song[0] }</p> <%-- 값 출력 --%>
 	<p>${song[1] }</p> <%-- 값 출력 --%>
 	<p>${song[2] }</p> <%-- 값 출력 --%>
 </body>
 </html>
+
+
+
+
