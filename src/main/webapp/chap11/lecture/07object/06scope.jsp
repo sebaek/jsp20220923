@@ -14,8 +14,8 @@
 	request.setAttribute("people", Map.of("bts", "jimin", "bp", "jenny"));
 	%>
 	
-	<p></p><%-- jimin --%>
-	<p></p><%-- jenny --%>
+	<p>${requestScope.people.bts }</p><%-- jimin --%>
+	<p>${requestScope.people.bp }</p><%-- jenny --%>
 </body>
 </html>
 
