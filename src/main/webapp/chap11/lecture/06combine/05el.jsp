@@ -43,6 +43,14 @@ p4.setName("엄지");
 p4.setAge(600);
 
 %>
+<p>${people.people1[0].name }</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
 </body>
 </html>
 
