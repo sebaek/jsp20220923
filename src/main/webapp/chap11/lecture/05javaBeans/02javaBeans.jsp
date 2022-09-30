@@ -12,6 +12,12 @@
 	<%--
 	attribute 에 Book 객체 추가
 	 --%>
+	<%
+	Book b1 = new Book("java", 500);
+	Book b2 = new Book("jsp", 300);
+	request.setAttribute("book1", b1);
+	request.setAttribute("book2", b2);
+	%>
 	
 	<p>${book1.title }</p>
 	<p>${book1.price }</p>
