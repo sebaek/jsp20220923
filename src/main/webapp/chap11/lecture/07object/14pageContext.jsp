@@ -21,6 +21,8 @@
 	
 	<hr>
 	<%-- el을 사용해서 request의 getLocalPort(), getLocalName() 호출 결과 출력 --%>
+	<p>${pageContext.request.localPort }</p>
+	<p>${pageContext.request.localName }</p>
 </body>
 </html>
 
