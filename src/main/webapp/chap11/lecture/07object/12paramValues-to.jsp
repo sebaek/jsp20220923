@@ -8,6 +8,20 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+	<p>이름 : ${param.n }</p>
+	<p>영웅 : ${paramValues.heros[0] }</p>
+	<p>영웅 : ${paramValues.heros[1] }</p>
+	<p>영웅 : ${paramValues.heros[2] }</p>
+	<p>영웅 : ${paramValues.heros[3] }</p>
+	<p>영웅 : ${paramValues.heros[4] }</p>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
