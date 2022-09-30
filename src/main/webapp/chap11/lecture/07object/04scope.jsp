@@ -15,6 +15,11 @@
 	pageContext.setAttribute("your Name", "강호동");
 	request.setAttribute("99name", "지석진");
 	%>
+	<p>${myName }</p>
+	<p>${pageScope.myName }</p>
+	<p>${requestScope.myName }</p>
+	<p>${pageScope["your Name"] }</p>
+	<p>${requestScope["99name"] }</p>
 </body>
 </html>
 
