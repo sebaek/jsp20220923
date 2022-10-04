@@ -12,9 +12,9 @@
 </head>
 <body>
 
-<c:set var="left" value="1" />
-<c:set var="right" value="10" />
-<c:set var="current" value="3" />
+<c:set var="left" value="16" />
+<c:set var="right" value="20" />
+<c:set var="current" value="17" />
 <c:set var="lastPageNum" value="20" />
 
 <%-- left가 1이면 Previous 출력 안하기 --%>
@@ -22,7 +22,10 @@
 <%-- left 부터 right까지 반복되는 pagination 작성 --%>
 	<nav aria-label="Page navigation example">
 	  <ul class="pagination">
-	    <li class="page-item"><a class="page-link" href="#">Previous</a></li>	
+	  
+	  	<c:if test="${left != 1 }">
+		    <li class="page-item"><a class="page-link" href="#">Previous</a></li>	
+	  	</c:if>
 	
 		<c:forEach begin="${left }" end="${right }" var="i">
 			<li class="page-item
@@ -36,7 +39,9 @@
 			</li>
 		</c:forEach>
 		
-	    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+		<c:if test="${lastPageNum != right }">
+		    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+		</c:if>
 	  </ul>
 	</nav>	
 	
