@@ -10,13 +10,9 @@
 </head>
 <body>
 	<%-- 08forEach?left=3&right=9 --%>
-	<p>3</p>
-	<p>4</p>
-	<p>5</p>
-	<p>6</p>
-	<p>7</p>
-	<p>8</p>
-	<p>9</p>
+	<c:forEach begin="${param.left }" end="${param.right }" var="i">
+		<p>${i }</p>
+	</c:forEach>
 </body>
 </html>
 
