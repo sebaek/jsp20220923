@@ -14,7 +14,7 @@
 
 <c:set var="left" value="1" />
 <c:set var="right" value="10" />
-<c:set var="current" value="4" />
+<c:set var="current" value="3" />
 
 <%-- left 부터 right까지 반복되는 pagination 작성 --%>
 	<nav aria-label="Page navigation example">
@@ -22,7 +22,29 @@
 	    <li class="page-item"><a class="page-link" href="#">Previous</a></li>	
 	
 		<c:forEach begin="${left }" end="${right }" var="i">
-			<li class="page-item">
+			<li class="page-item
+			
+			<c:if test="${current == i }">
+				active
+			</c:if>
+			
+			">
+				<a href="#" class="page-link">${i }</a>
+			</li>
+		</c:forEach>
+		
+	    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+	  </ul>
+	</nav>	
+	
+	<hr>
+	
+	<nav aria-label="Page navigation example">
+	  <ul class="pagination">
+	    <li class="page-item"><a class="page-link" href="#">Previous</a></li>	
+	
+		<c:forEach begin="${left }" end="${right }" var="i">
+			<li class="page-item ${current eq i ? 'active' : '' }">
 				<a href="#" class="page-link">${i }</a>
 			</li>
 		</c:forEach>
