@@ -15,7 +15,10 @@
 <c:set var="left" value="1" />
 <c:set var="right" value="10" />
 <c:set var="current" value="3" />
+<c:set var="lastPageNum" value="20" />
 
+<%-- left가 1이면 Previous 출력 안하기 --%>
+<%-- lastPageNum과 right가 같으면 Next 출력 안하기 --%>
 <%-- left 부터 right까지 반복되는 pagination 작성 --%>
 	<nav aria-label="Page navigation example">
 	  <ul class="pagination">
