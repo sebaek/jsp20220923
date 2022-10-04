@@ -11,6 +11,7 @@
 <body>
 	<c:if test="${empty param.address }" >
 		<h1>주소를 입력해주세요.</h1>
+		<a href="03from.jsp">돌아가기</a>
 	</c:if>
 	
 	<c:if test="${not empty param.address }">

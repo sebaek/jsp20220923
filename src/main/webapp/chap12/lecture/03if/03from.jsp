@@ -10,5 +10,13 @@
 </head>
 <body>
 	<%-- form 요소 작성 03to.jsp로 서브밋 되도록  --%>
+	<form action="03to.jsp">
+		<input type="text" name="address">
+		<input type="submit" value="전송">
+	</form>
 </body>
 </html>
+
+
+
+
