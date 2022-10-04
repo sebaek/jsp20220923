@@ -9,6 +9,18 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+	<h3>구구단 3단 출력</h3>
+	<c:forEach begin="1" end="9" var="x">
+	
+	</c:forEach>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
