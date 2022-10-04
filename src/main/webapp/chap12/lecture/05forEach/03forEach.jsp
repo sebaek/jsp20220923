@@ -9,13 +9,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h3>구구단 3단 출력</h3>
-	<c:forEach begin="1" end="9" var="x">
-		<p>3 X ${x } = ${3 * x }</p>
-	</c:forEach>
+	<%-- 구구단 출력 --%>
+	<%-- request parameter "dan" --%>
+	<h3>구구단 ${param.dan }단 출력</h3>
 </body>
 </html>
-
 
 
 
