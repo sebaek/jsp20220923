@@ -9,15 +9,18 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h3>중첩 forEach 태그로 구구단 짝수단만 출력 (2,4,6,8)단만</h3>
-	<c:forEach begin="2" end="8" step="2" var="dan">
-		<h4>구구단 ${dan }단</h4>
-		<c:forEach begin="1" end="9" var="num">
-			<p>${dan } X ${num } = ${dan * num }</p>
-		</c:forEach>
-	</c:forEach>
+	<%-- 08forEach?left=3&right=9 --%>
+	<p>3</p>
+	<p>4</p>
+	<p>5</p>
+	<p>6</p>
+	<p>7</p>
+	<p>8</p>
+	<p>9</p>
 </body>
 </html>
+
+
 
 
 
