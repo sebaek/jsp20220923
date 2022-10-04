@@ -10,8 +10,23 @@
 </head>
 <body>
 	<%-- 중첩된 foreach 사용해서 구구단 2~9단 까지 모두 출력 --%>
+	<c:forEach begin="2" end="9" var="dan">
+		<h3>구구단 ${dan }단</h3>
+		<c:forEach begin="1" end="9" var="num">
+			<p>${dan } X ${num } = ${dan * num }</p>
+		</c:forEach>
+	</c:forEach>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
 
 
 
