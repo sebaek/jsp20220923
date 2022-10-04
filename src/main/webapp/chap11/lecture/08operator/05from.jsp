@@ -8,9 +8,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-<!-- http://localhost:8080/jsp20220923/chap11/lecture/08operator/04arithmetic.jsp?a=3&b=5&x=10&y=20&num1=100&num2=300 -->
-	<p>${param.a + param.b }</p>
-	<p>${param.x - param.y }</p>
-	<p>${param.num1 / param.num2 }</p>
+	<form action="05to.jsp" method="post">
+		<%-- 여기에 적절한 input 요소들 작성 --%>
+	
+		<input type="submit" value="전송">
+	</form>
 </body>
 </html>
