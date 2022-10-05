@@ -14,7 +14,7 @@
 <body>
 
 <%
-pageContext.setAttribute("foodList", List.of("cake", "pizza", "burger", "coffee"));
+pageContext.setAttribute("foodList", List.of("cake", "pizza", "burger", "coffee", "milk"));
 %>
 <%--
 foodList 탐색해서 출력 
@@ -22,6 +22,11 @@ foodList 탐색해서 출력
 2. 마지막 아이템은 text-danger class인 p요소 출력
 3. 나머지는 class 없는 p요소 출력
  --%>
+ 
+<c:forEach items="${foodList }" var="food" varStatus="st">
+	<p class="${st.first ? 'text-primary' : '' } 
+	          ${st.last ? 'text-danger' : ''}">${food }</p>
+</c:forEach>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>
