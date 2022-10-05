@@ -15,8 +15,12 @@
 <%--
 // foods라는 이름의 Set<String> 타입 attribute를 page에 추가
 --%>
+<%
+pageContext.setAttribute("foods", Set.of("cake", "pizza", "coffee"));
+%>
 
 <c:forEach items="${foods }" var="food" varStatus="status">
+	<p>${status.count } : ${food }</p>
 </c:forEach>
 
 <%--
