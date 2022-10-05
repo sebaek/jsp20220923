@@ -13,7 +13,7 @@
 <body>
 
 <%
-// List타입의 foodList이름의 attribute를 추가하는 코드 작성
+//  foodList이름의 List타입 attribute를 추가하는 코드 작성
 %>
 
 <ul>
