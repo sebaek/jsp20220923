@@ -43,13 +43,15 @@
 	<table class="table">
 		<thead>
 			<tr>
+				<th>#</th>
 				<th>모델</th>
 				<th>가격</th>
 			</tr>
 		</thead>
 		<tbody>
-			<c:forEach items="${cars }" var="car">
+			<c:forEach items="${cars }" var="car" varStatus="status">
 				<tr>
+					<td>${status.count }</td>
 					<td>${car.model }</td>
 					<td>${car.price }</td>
 				</tr>
