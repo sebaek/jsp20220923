@@ -16,6 +16,12 @@
 	1. 01url.jsp로 가는 경로를 상대경로로 작성
 	2. 01url.jsp로 가는 경로를 절대경로로 작성
 	 --%>
+	<c:url value="01url.jsp" var="url1"></c:url>
+	
+	<c:url value="/chap12/lecture/06url/01url.jsp" var="url2"></c:url>
+	
+	<a href="${url1 }">01url.jsp로 가기 (상대경로)</a> <br>
+	<a href="${url2 }">01url.jsp로 가기 (절대경로)</a> 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
