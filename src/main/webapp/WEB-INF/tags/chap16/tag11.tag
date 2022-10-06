@@ -1,5 +1,10 @@
 <%@ tag language="java" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@ attribute name="menuItems" %>
+
+
+
 
 <nav class="navbar navbar-expand-lg bg-light">
   <div class="container-fluid">
@@ -9,12 +14,11 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
+		<c:forEach items="${fn:split(menuItems, ',') }" var="item">
+	        <li class="nav-item">
+	          <a class="nav-link" href="#">${item }</a>
+	        </li>
+		</c:forEach>
       </ul>
     </div>
   </div>
