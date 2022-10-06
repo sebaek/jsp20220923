@@ -17,6 +17,9 @@
 	<my:tag10 left="1" right="5" /> <%-- 1~5 페이지링크 출력 --%>
 	<hr>
 	<my:tag10 left="11" right="20" active="15" /> <%-- 11~20 페이지링크 출력 --%>
+	<hr>
+	<my:tag10 left="21" right="30" active="22" /> <%-- 11~20 페이지링크 출력 --%>
+	
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
