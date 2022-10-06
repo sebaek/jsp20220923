@@ -2,6 +2,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <%@ attribute name="menuItems" %>
+<%@ attribute name="current" %>
 
 
 
@@ -16,7 +17,7 @@
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 		<c:forEach items="${fn:split(menuItems, ',') }" var="item">
 	        <li class="nav-item">
-	          <a class="nav-link" href="#">${item }</a>
+	          <a class="nav-link ${item eq current ? 'active' : '' }" href="#">${item }</a>
 	        </li>
 		</c:forEach>
       </ul>
