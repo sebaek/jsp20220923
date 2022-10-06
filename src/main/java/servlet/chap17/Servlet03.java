@@ -32,7 +32,7 @@ public class Servlet03 extends HttpServlet {
 		request.setAttribute("result", "일한 결과!!!!!!");
 		
 		// jsp로 forward
-		String jspPath = "/chap17/view01.jsp";
+		String jspPath = "/WEB-INF/view/chap17/view02.jsp";
 		request.getRequestDispatcher(jspPath).forward(request, response);
 	}
 
