@@ -39,6 +39,10 @@
   		<param-name>ip</param-name>
   		<param-value>2.255.1.99</param-value>
   	</init-param>
+  	<init-param>
+  		<param-name>userName</param-name>
+  		<param-value>ironman</param-value>
+  	</init-param>
   </servlet>
   
   <servlet-mapping>
