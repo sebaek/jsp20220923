@@ -85,11 +85,30 @@ public class Servlet10 extends HttpServlet {
 		// 2. attribute 추가하고
 		String message = "새로운 책이 등록되었습니다.";
 		request.setAttribute("message", message);
+		request.setAttribute("bookList", bookdb);
 		
 		// 3. forward/redirect
-		String path = "/WEB-INF/view/chap17/view06.jsp";
-		request.getRequestDispatcher(path).forward(request, response);
+//		String path = "/WEB-INF/view/chap17/view06.jsp";
+//		request.getRequestDispatcher(path).forward(request, response);
+		
+		String redirectPath = request.getContextPath() + "/Servlet10";
+		response.sendRedirect(redirectPath);
 	}
+	
+	/*
+		doGet/doPost (Request Handler Method)
+		
+		1. 파라미터 꺼내기
+		
+		2. 파라미터 가공
+		
+		3. 일함(보통 db관련일)
+		
+		4. 결과 추가 (attribute 추가)
+
+		5. forward / redirect
+	 * 
+	 */
 
 }
 
