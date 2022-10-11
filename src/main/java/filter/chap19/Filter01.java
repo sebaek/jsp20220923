@@ -12,7 +12,7 @@ import javax.servlet.annotation.WebFilter;
 /**
  * Servlet Filter implementation class Filter01
  */
-@WebFilter("/Filter01")
+@WebFilter("/Servlet11")
 public class Filter01 implements Filter {
 
     /**
@@ -35,8 +35,11 @@ public class Filter01 implements Filter {
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
 		// TODO Auto-generated method stub
 		// place your code here
+		// 필터가 해야 하는 일 작성
+		System.out.println("필터1번 일함");
 
 		// pass the request along the filter chain
+		// 필터체인에 요청을 계속 전달한다.(다음 필터/서블릿 실행)
 		chain.doFilter(request, response);
 	}
 
