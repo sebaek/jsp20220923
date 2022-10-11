@@ -64,9 +64,14 @@ public class Servlet11 extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		// 0. 사전 작업
+		request.setCharacterEncoding("utf-8");
+		
 		// 1. request parameter 수집
 		String title = request.getParameter("title");
 		String priceParam = request.getParameter("price");
+		
+		System.out.println(title);
 		
 		// 2. request parameter 가공
 		int price = Integer.parseInt(priceParam);
