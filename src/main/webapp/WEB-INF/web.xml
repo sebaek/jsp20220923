@@ -9,7 +9,17 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <!-- ServletContextListener 설정 -->
+  <listener>
+  	<listener-class>listener.chap20.ServletContextListener02</listener-class>
+  </listener>
   
+  <listener>
+  	<listener-class>listener.chap20.ServletContextListener01</listener-class>
+  </listener>
+  
+  
+  <!-- 세션설정 -->
   <session-config>
   	<session-timeout>60</session-timeout>
   </session-config>
