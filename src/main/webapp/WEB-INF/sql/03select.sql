@@ -37,6 +37,8 @@ FROM
     Customers;
 
 -- Employees 테이블의 모든 레코드와 모든 컬럼 조회
+SELECT * FROM Employees;
+
 
 
 
