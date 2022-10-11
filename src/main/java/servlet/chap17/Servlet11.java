@@ -65,7 +65,7 @@ public class Servlet11 extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// 0. 사전 작업
-		request.setCharacterEncoding("utf-8");
+//		request.setCharacterEncoding("utf-8"); // 필터로 처리
 		
 		// 1. request parameter 수집
 		String title = request.getParameter("title");

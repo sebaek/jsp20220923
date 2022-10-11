@@ -62,7 +62,7 @@ public class Servlet10 extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		request.setCharacterEncoding("utf-8");
+//		request.setCharacterEncoding("utf-8"); // 필터에서 실행
 		// 1. 일하고
 		
 		// 1-1. 리퀘스트 파라미터 꺼내고
