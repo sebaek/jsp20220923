@@ -33,11 +33,13 @@
   <filter-mapping>
   	<filter-name>filter03</filter-name>
   	<url-pattern>/Servlet10</url-pattern>
+  	<url-pattern>/Servlet11</url-pattern>
   </filter-mapping>
   
   <filter-mapping>
   	<filter-name>filter02</filter-name>
   	<url-pattern>/Servlet10</url-pattern>
+	<url-pattern>/filter/*</url-pattern>
   </filter-mapping>
   
   <filter-mapping>
