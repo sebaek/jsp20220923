@@ -31,8 +31,10 @@ public class ServletContextListener03 implements ServletContextListener {
     public void contextInitialized(ServletContextEvent sce)  { 
     	ServletContext application = sce.getServletContext();
     	String param1 = application.getInitParameter("init-param1");
+    	String param2 = application.getInitParameter("init-param2");
     	
     	System.out.println(param1);
+    	System.out.println(param2);
     }
 	
 }

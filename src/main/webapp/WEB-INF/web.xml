@@ -28,6 +28,11 @@
   	<param-value>init-value1</param-value>
   </context-param>
   
+  <context-param>
+  	<param-name>init-param2</param-name>
+  	<param-value>init-value2</param-value>
+  </context-param>
+  
   
   <!-- 세션설정 -->
   <session-config>
