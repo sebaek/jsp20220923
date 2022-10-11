@@ -39,7 +39,13 @@ FROM
 -- Employees 테이블의 모든 레코드와 모든 컬럼 조회
 SELECT * FROM Employees;
 
+-- SELECT 이후의 컬럼의 순서가 결과의 순서가 됨
+SELECT CustomerName, Address FROM Customers;
+SELECT Address, CustomerName FROM Customers;
 
+-- Employees 테이블의 모든 레코드를 FirstName, LastName, BirthDate 컬럼으로 조회
+SELECT FirstName, LastName, BirthDate FROM Employees;
+SELECT LastName, FirstName, BirthDate FROM Employees;
 
 
 
