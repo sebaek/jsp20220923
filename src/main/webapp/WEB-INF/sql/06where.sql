@@ -12,7 +12,7 @@ SELECT * FROM Suppliers WHERE Country = 'UK';
 SELECT CustomerName FROM Customers WHERE Country = 'France';
 
 -- Suppliers 테이블에서 Country가 Japan인 공급자명(SupplierName) 조회
-
+SELECT SupplierName FROM Suppliers WHERE Country = 'Japan';
 
 
 
