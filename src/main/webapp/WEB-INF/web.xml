@@ -18,6 +18,16 @@
   	<listener-class>listener.chap20.ServletContextListener01</listener-class>
   </listener>
   
+  <listener>
+  	<listener-class>listener.chap20.ServletContextListener03</listener-class>
+  </listener>
+  
+  <!-- 초기화 파라미터 설정 : 어플리케이션 실행시 필요한 정보 작성 -->
+  <context-param>
+  	<param-name>init-param1</param-name>
+  	<param-value>init-value1</param-value>
+  </context-param>
+  
   
   <!-- 세션설정 -->
   <session-config>
