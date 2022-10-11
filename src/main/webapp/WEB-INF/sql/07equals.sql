@@ -21,5 +21,6 @@ SELECT * FROM Customers WHERE CustomerID = 3; -- OK
 
 -- Employees 테이블에서 FirstName이 Nancy인 직원 조회
 
+-- Employees 테이블에서 FirstName이 Janet인 직원의 생일 조회
 
 
