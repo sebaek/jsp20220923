@@ -12,7 +12,7 @@ import javax.servlet.annotation.WebFilter;
 /**
  * Servlet Filter implementation class Filter02
  */
-@WebFilter("/Servlet10")
+//@WebFilter("/Servlet10")
 public class Filter02 implements Filter {
 
     /**
