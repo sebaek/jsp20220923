@@ -48,6 +48,7 @@ public class ServletContextListener04 implements ServletContextListener {
     		
     	} catch (Exception e) {
     		e.printStackTrace();
+    		System.out.println("리스너에서 문제 생김");
     	}
     	
     	
