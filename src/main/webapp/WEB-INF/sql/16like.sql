@@ -9,3 +9,6 @@ SELECT * FROM Customers WHERE CustomerName LIKE '_R%';
 SELECT * FROM Customers WHERE CustomerName LIKE 'A_%_%';
 SELECT * FROM Customers WHERE ContactName LIKE 'A%O';
 
+-- firstName이 A로 시작하는 직원들 (Employees)
+-- ContactName이 E로 끝나는 공급자들 (Suppliers)
+-- C로 시작하고 S로 끝나는 상품명들 (Products)
