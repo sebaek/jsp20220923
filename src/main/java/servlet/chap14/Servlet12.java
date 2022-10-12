@@ -61,6 +61,24 @@ public class Servlet12 extends HttpServlet {
 			// 5. 쿼리 실행 결과 사용(가공)
 			// ResultSet 사용
 			System.out.println("문제없이 연결됨");
+			
+			/*
+			System.out.println(rs.next()); // true
+			String name1 = rs.getString(1);
+			System.out.println(name1);
+			
+			System.out.println(rs.next()); // true
+			String name2 = rs.getString(1);
+			System.out.println(name2);
+			
+			System.out.println(rs.next()); // false
+			*/
+			
+			while (rs.next()) {
+				String name = rs.getString(1);
+				System.out.println(name);
+			}
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 			System.out.println("문제가 발생됨, 식사하고 해결합시다!!");
