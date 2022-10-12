@@ -73,12 +73,6 @@ public class Servlet13 extends HttpServlet {
 		String path = "/WEB-INF/view/chap14/view01.jsp";
 		request.getRequestDispatcher(path).forward(request, response);
 		
-		
-		
-		
-		
-		
-		
 	}
 
 	/**
