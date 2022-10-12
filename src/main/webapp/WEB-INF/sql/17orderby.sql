@@ -35,7 +35,10 @@ SELECT CustomerName, City FROM Customers ORDER BY 1;
 SELECT CustomerName, City FROM Customers ORDER BY 1 ASC;
 SELECT CustomerName, City FROM Customers ORDER BY 2, 1;
 
-
+-- 직원 생일 순으로 직원 조회
+-- 상품명순으로 상품 조회
+-- 가격이 높은 것부터 낮은 것순으로 상품 조회
+-- 공급자를 나라, 도시순으로 조회
 
 
 
