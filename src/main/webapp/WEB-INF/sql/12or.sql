@@ -13,4 +13,4 @@ OR Country = 'Mexico';
 
 -- usa와 uk에 있는 공급자 조회 (Suppliers)
 
--- 카테고리가 1,2번인 상품 조회
+-- 카테고리가 1,2번인 상품 조회 (Products)
