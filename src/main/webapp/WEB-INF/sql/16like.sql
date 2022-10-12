@@ -12,3 +12,4 @@ SELECT * FROM Customers WHERE ContactName LIKE 'A%O';
 -- firstName이 A로 시작하는 직원들 (Employees)
 -- ContactName이 E로 끝나는 공급자들 (Suppliers)
 -- C로 시작하고 S로 끝나는 상품명들 (Products)
+-- C로 시작하는 5글자 상품명을 가진 상품들
