@@ -33,6 +33,11 @@ public class Servlet13 extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// 1. request 파라미터 수집
+		
+		// 2. request parameter 가공
+		
+		// 3. 실제 업무 (business logic), 많은 경우 db관련 작업
 		String sql = "SELECT FirstName FROM Employees WHERE EmployeeID = 1";
 		
 		// connection 얻기
@@ -55,6 +60,7 @@ public class Servlet13 extends HttpServlet {
 				String firstName = rs.getString(1);
 				System.out.println(firstName);
 				
+				// 4. add attribute 
 				request.setAttribute("firstName", firstName);
 			}
 				
@@ -63,8 +69,16 @@ public class Servlet13 extends HttpServlet {
 		}
 
 		
+		// 5. forward / redirect
 		String path = "/WEB-INF/view/chap14/view01.jsp";
 		request.getRequestDispatcher(path).forward(request, response);
+		
+		
+		
+		
+		
+		
+		
 	}
 
 	/**
