@@ -10,6 +10,10 @@ SELECT * FROM Customers WHERE CustomerName LIKE 'A_%_%';
 SELECT * FROM Customers WHERE ContactName LIKE 'A%O';
 
 -- firstName이 A로 시작하는 직원들 (Employees)
+SELECT * FROM Employees WHERE FirstName LIKE 'A%';
 -- ContactName이 E로 끝나는 공급자들 (Suppliers)
+SELECT * FROM Suppliers WHERE ContactName LIKE '%E';
 -- C로 시작하고 S로 끝나는 상품명들 (Products)
+SELECT * FROM Products WHERE ProductName LIKE 'C%S';
 -- C로 시작하는 5글자 상품명을 가진 상품들
+SELECT * FROM Products WHERE ProductName LIKE 'C____';
