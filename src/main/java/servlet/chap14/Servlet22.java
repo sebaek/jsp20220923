@@ -73,6 +73,8 @@ public class Servlet22 extends HttpServlet {
 
 					list.add(p);
 				}
+				
+				request.setAttribute("products", list);
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
