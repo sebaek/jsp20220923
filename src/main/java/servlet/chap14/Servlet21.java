@@ -74,7 +74,7 @@ public class Servlet21 extends HttpServlet {
 		}
 		
 		// 5. forward / redirect
-		String view = "/WEB-INF/view/chap14/view06.jsp";
+		String view = "/WEB-INF/view/chap14/view09.jsp";
 		request.getRequestDispatcher(view).forward(request, response);
 	
 	}
