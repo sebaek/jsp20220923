@@ -4,6 +4,24 @@ public class Customer {
 	private int id;
 	private String name;
 	private String address;
+	private String city;
+	private String country;
+
+	public String getCity() {
+		return city;
+	}
+
+	public String getCountry() {
+		return country;
+	}
+
+	public void setCity(String city) {
+		this.city = city;
+	}
+
+	public void setCountry(String country) {
+		this.country = country;
+	}
 
 	public int getId() {
 		return id;

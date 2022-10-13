@@ -18,6 +18,8 @@
 				<th>ID</th>
 				<th>이름</th>
 				<th>주소</th>
+				<th>도시</th>
+				<th>나라</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -26,6 +28,8 @@
 					<td>${customer.id }</td>
 					<td>${customer.name }</td>
 					<td>${customer.address }</td>
+					<td>${customer.city }</td>
+					<td>${customer.country }</td>
 				</tr>
 			
 			</c:forEach>
