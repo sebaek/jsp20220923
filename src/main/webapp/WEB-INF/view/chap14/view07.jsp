@@ -12,6 +12,10 @@
 <body>
 	<h1>고객 목록</h1>
 	
+	<form action="">
+		<input type="text" name="keyword" value="${param.keyword }">
+		<input type="submit" value="이름검색">
+	</form>
 	<table class="table">
 		<thead>
 			<tr>
