@@ -8,5 +8,15 @@ VALUES
 (10, 'Son', 'HM', '1999-01-01', 'EmpID10.pic', 'soccer player');
 
 -- 11번째 직원 추가 
+INSERT INTO Employees 
+(EmployeeID, LastName, FirstName, BirthDate, Photo, Notes)
+VALUES
+(11, 'Tony', 'Stark', '1980-01-01', 'EmpID11.pic', 'ironman');
 
+-- 12번째 직원 추가, notes 컬럼 빼고
+INSERT INTO Employees
+(EmployeeID, LastName, FirstName, BirthDate, Photo)
+VALUES
+(12, 'Black', 'Panther', '1970-01-01', 'EmpID12.pic');
 
+-- 13번째 직원 추가, birthDate, notes 컬럼 빼고
