@@ -69,7 +69,7 @@ public class Servlet27 extends HttpServlet {
 			
 			// 5. forward / redirect
 			if (cnt == 1) {
-				String path = request.getContextPath() + "/Servlet17";
+				String path = request.getContextPath() + "/Servlet24";
 				response.sendRedirect(path);
 			}
 		} catch (Exception e) {
