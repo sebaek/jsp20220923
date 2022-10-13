@@ -52,12 +52,14 @@ public class Servlet19 extends HttpServlet {
 			// 결과가공 및 attribute 추가
 			List<Customer> list = new ArrayList<>();
 			while (rs.next()) {
+				int id = rs.getInt("customerid"); // 대소문자 구분 안함
 //				String name = rs.getString(2);
 				String name = rs.getString("CustomerName");
 //				String address = rs.getString(3);
 				String address = rs.getString("Address");
 				
 				Customer c = new Customer();
+				c.setId(id);
 				c.setName(name);
 				c.setAddress(address);
 				

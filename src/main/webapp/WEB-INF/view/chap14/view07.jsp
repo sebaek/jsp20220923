@@ -15,6 +15,7 @@
 	<table class="table">
 		<thead>
 			<tr>
+				<th>ID</th>
 				<th>이름</th>
 				<th>주소</th>
 			</tr>
@@ -22,6 +23,7 @@
 		<tbody>
 			<c:forEach items="${customers }" var="customer">
 				<tr>
+					<td>${customer.id }</td>
 					<td>${customer.name }</td>
 					<td>${customer.address }</td>
 				</tr>
