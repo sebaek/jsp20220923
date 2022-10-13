@@ -60,7 +60,6 @@ public class Servlet22 extends HttpServlet {
 				Connection con = DriverManager.getConnection(url, user, pw);
 				PreparedStatement pstmt = con.prepareStatement(sql);) {
 
-			System.out.println(id);
 			pstmt.setInt(1, id); // 쿼리의 첫번째 물음표에 int id값 추가
 			try (ResultSet rs = pstmt.executeQuery();) {
 				// 4. add attribute 추가
