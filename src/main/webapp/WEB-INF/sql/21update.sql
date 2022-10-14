@@ -26,3 +26,12 @@ WHERE Country = 'UK';
 SELECT * FROM Customers
 WHERE Country = 'UK';
 
+UPDATE Customers
+SET City = 'Seoul'; 
+
+-- WHERE 절 생략하지 않기
+-- UPDATE 실행 전에 같은 WHERE 절로 SELECT 해보기
+
+
+SELECT * FROM Customers;
+
