@@ -35,7 +35,17 @@
 			<c:forEach items="${customers }" var="customer">
 				<tr>
 					<td>${customer.id }</td>
-					<td>${customer.name }</td>
+					<td>
+						<c:url value="/Servlet30" var="updateUrl">
+							<c:param name="id" value="${customer.id }" />
+						</c:url>
+					
+						<a href="${updateUrl }">
+							${customer.name }
+						</a>
+					
+					
+					</td>
 					<td>${customer.contactName }</td>
 					<td>${customer.address }</td>
 					<td>${customer.city }</td>
