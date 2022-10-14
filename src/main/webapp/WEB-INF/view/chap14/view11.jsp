@@ -14,6 +14,7 @@
 	
 	<form action="${pageContext.request.contextPath }/Servlet28" method="post">
 		이름 <input type="text" name="name"> <br>
+		별칭 <input type="text" name="contactName"> <br>
 		주소 <input type="text" name="address"> <br>
 		도시 <input type="text" name="city"> <br>
 		국가 <input type="text" name="country"> <br>

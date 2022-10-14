@@ -52,14 +52,15 @@ public class Servlet28 extends HttpServlet {
 		// 1. request param 수집
 		String name = request.getParameter("name");
 		String address = request.getParameter("address");
+		String contactName = request.getParameter("contactName");
 		String city = request.getParameter("city");
 		String country = request.getParameter("country");
 
 		// 2. 가공
 
 		// 3. business logic
-		String sql = "INSERT INTO Customers (CustomerName, Address, City, Country)"
-				+ " VALUES (?, ?, ?, ?)";
+		String sql = "INSERT INTO Customers (CustomerName, ContactName, Address, City, Country)"
+				+ " VALUES (?, ?, ?, ?, ?)";
 		ServletContext application = request.getServletContext();
 
 		String url = application.getAttribute("jdbc.url").toString();
@@ -71,9 +72,10 @@ public class Servlet28 extends HttpServlet {
 				PreparedStatement pstmt = con.prepareStatement(sql);) {
 
 			pstmt.setString(1, name);
-			pstmt.setString(2, address);
-			pstmt.setString(3, city);
-			pstmt.setString(4, country);
+			pstmt.setString(2, contactName);
+			pstmt.setString(3, address);
+			pstmt.setString(4, city);
+			pstmt.setString(5, country);
 
 			int cnt = pstmt.executeUpdate();
 			// 4. add attribute
